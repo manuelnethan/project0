@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Image Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input[type="text"], input[type="submit"] {
+      padding: 10px;
+      border-radius: 5px;
+    }
+    input[type="text"] {
+      width: 300px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      margin-left: 10px;
+      background-color: #34a853;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #34a853;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Image Search</h1>
+  <form action="https://www.google.com/search" method="get">
+    <input type="hidden" name="tbm" value="isch">
+    <input type="text" name="q" placeholder="Search for images...">
+    <input type="submit" value="Search">
+  </form>
+  <a href="web-search.html">Go to Web Search</a>
+  <a href="news-search.html">Go to News Search</a>
+</body>
+</html>

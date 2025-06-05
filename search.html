@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google News Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input[type="text"], input[type="submit"] {
+      padding: 10px;
+      border-radius: 5px;
+    }
+    input[type="text"] {
+      width: 300px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      margin-left: 10px;
+      background-color: #fbbc05;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #fbbc05;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google News Search</h1>
+  <form action="https://www.google.com/search" method="get">
+    <input type="hidden" name="tbm" value="nws">
+    <input type="text" name="q" placeholder="Search news...">
+    <input type="submit" value="Search">
+  </form>
+  <a href="web-search.html">Go to Web Search</a>
+  <a href="image-search.html">Go to Image Search</a>
+</body>
+</html>
